@@ -79,6 +79,11 @@ $("#task-form-modal .btn-primary").click(function() {
     });
 
     saveTasks();
+    $(".list-group").on("click", "p", function() {
+      var textInput = $(this).replaceWith("<textInput.>")textInput.trigger("focus");
+      .addClass("form-control")
+      .val(text);
+    });
   }
 });
 
