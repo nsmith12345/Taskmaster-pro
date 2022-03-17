@@ -80,12 +80,11 @@ $("#task-form-modal .btn-primary").click(function() {
 
     saveTasks();
     $(".list-group").on("click", "p", function() {
-      var textInput = $(this).replaceWith("<textInput.>")textInput.trigger("focus");
-      .addClass("form-control")
-      .val(text);
+      var text = $(this)
+        .text()
+        .trim();
     });
-  }
-});
+};
 
 // remove all tasks
 $("#remove-tasks").on("click", function() {
